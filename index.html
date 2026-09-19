@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星海神域 - 3D开放世界卡牌策略游戏</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0d1129 100%);
+  color: #e0e6ff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.hero { text-align: center; padding: 60px 0; }
+.hero h1 {
+  font-size: 3.5em;
+  background: linear-gradient(90deg, #ffd97a, #ff9a56, #ff6b9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.hero .subtitle { font-size: 1.3em; color: #8892b0; margin-bottom: 40px; }
+.cta-button {
+  display: inline-block;
+  padding: 18px 60px;
+  background: linear-gradient(135deg, #ffd97a, #ff9a56);
+  color: #1a1f3a;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 20px rgba(255, 217, 122, 0.3);
+}
+.cta-button:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(255, 217, 122, 0.5); }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 60px 0; }
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.feature-card:hover { transform: translateY(-5px); border-color: rgba(255, 217, 122, 0.3); }
+.feature-card h3 { color: #ffd97a; margin-bottom: 15px; font-size: 1.2em; }
+.feature-card p { color: #8892b0; line-height: 1.6; }
+.stats { display: flex; justify-content: center; gap: 60px; margin: 40px 0; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat .number { font-size: 2.5em; font-weight: 800; color: #ffd97a; }
+.stat .label { color: #8892b0; font-size: 0.9em; margin-top: 5px; }
+footer { text-align: center; padding: 40px 0; color: #555; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 60px; }
+footer a { color: #8892b0; text-decoration: none; margin: 0 10px; }
+footer a:hover { color: #ffd97a; }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.5em; }
+  .features { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>星海神域</h1>
+    <p class="subtitle">3D开放世界 · 卡牌策略 · 经营养成 · 多人博弈</p>
+    <a href="index.html" class="cta-button">🚀 立即进入游戏</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="number">3D</div><div class="label">开放世界</div></div>
+    <div class="stat"><div class="number">8+</div><div class="label">玩家牌局</div></div>
+    <div class="stat"><div class="number">12+</div><div class="label">游戏玩法</div></div>
+    <div class="stat"><div class="number">5</div><div class="label">五行系统</div></div>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <h3>🎰 赌场博弈</h3>
+      <p>老虎机、百家乐、21点、轮盘、骰宝、赌马... 多种赌法任你选择，在星海中一试身手。</p>
+    </div>
+    <div class="feature-card">
+      <h3>🏛️ 组织经营</h3>
+      <p>从乡会到帝国，五级组织体系。建造建筑、管理人口、招募人才、发动战争，打造你的星海势力。</p>
+    </div>
+    <div class="feature-card">
+      <h3>🐉 五行灵兽</h3>
+      <p>瑞金兽、青木灵、沧澜蛟、炎翎凰、玄土龟——五行神兽养成、出战、产出、献祭，伴你闯荡星海。</p>
+    </div>
+    <div class="feature-card">
+      <h3>💍 婚姻社交</h3>
+      <p>相亲、彩礼、教堂婚礼、生子传承。与其他玩家结为伴侣，共建家园，体验星海人生百态。</p>
+    </div>
+    <div class="feature-card">
+      <h3>🏛️ 神迹信仰</h3>
+      <p>五行圣地观光、神迹庇佑、献祭反噬。选择你的信仰，接受神明的祝福或惩罚。</p>
+    </div>
+    <div class="feature-card">
+      <h3>🌍 开放探索</h3>
+      <p>15个主题区块、分块加载、传送门穿梭。从主城到星港，从国会到深渊，探索整个星海世界。</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>星海神域 · StarSea Poker | 
+      <a href="https://github.com/sicivi/starsea-poker" target="_blank">GitHub</a> · 
+      <a href="https://gitee.com/sicivi/starsea-poker" target="_blank">Gitee</a>
+    </p>
+    <p style="margin-top: 10px; font-size: 0.85em;">© 2026 StarSea. All rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>
